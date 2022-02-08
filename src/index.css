@@ -400,6 +400,6 @@ body::-webkit-scrollbar-thumb {
 @media screen and (max-width: 650px) {
   .article-project {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 500px);
+    grid-template-rows: repeat(6, 1fr);
   }
 }
