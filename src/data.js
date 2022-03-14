@@ -44,8 +44,16 @@ export const data = [
     name: 'Todo App en react',
     text: 'Todo App réalisée sous react.js. Vous pouvez ajouter, editer et supprimer les tâches à faire.',
     gitlink: 'https://github.com/Kazimor-5/todoapp-react-project',
-    link: '',
+    link: 'https://todoapp-react-project-abf.netlify.app',
     img: './images/todo-app-react.png',
+  },
+  {
+    id: 7,
+    name: "Panier d'achat en react",
+    text: "Panier d'achat réalisée sous react.js. Vous pouvez ajouter, retirer des articles ou alors les supprimer.",
+    gitlink: 'https://github.com/Kazimor-5/cart-project-redux',
+    link: 'https://cart-project-react-redux.netlify.app',
+    img: './images/cart-project.png',
   },
 ];
 

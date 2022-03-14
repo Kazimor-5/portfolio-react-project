@@ -17,14 +17,18 @@ const Image = () => {
           >
             Lien GitHub
           </a>
-          <a
-            href={link}
-            target='_blank'
-            className='tile-image'
-            rel='noreferrer'
-          >
-            Lien du site
-          </a>
+          {link ? (
+            <a
+              href={link}
+              target='_blank'
+              className='tile-image'
+              rel='noreferrer'
+            >
+              Lien du site
+            </a>
+          ) : (
+            ''
+          )}
         </div>
       </div>
     );
