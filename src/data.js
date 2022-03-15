@@ -55,6 +55,14 @@ export const data = [
     link: 'https://cart-project-react-redux.netlify.app',
     img: './images/cart-project.png',
   },
+  {
+    id: 8,
+    name: 'API de jobs',
+    text: 'API de jobs réalisée en Node.js avec express. La base de données est crée via Mongodb.',
+    gitlink: '',
+    link: 'https://jobs-api-project1.herokuapp.com/api/docs/',
+    img: './images/job-api.png',
+  },
 ];
 
 export const navLinks = [

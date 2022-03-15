@@ -9,14 +9,26 @@ const Image = () => {
         <p className='text-project'>{text}</p>
         <img src={img} alt={name} className='img' />
         <div className='link-container'>
-          <a
+          {gitlink ? (
+            <a
+              href={gitlink}
+              target='_blank'
+              className='tile-image'
+              rel='noreferrer'
+            >
+              Lien GitHub
+            </a>
+          ) : (
+            ''
+          )}
+          {/* <a
             href={gitlink}
             target='_blank'
             className='tile-image'
             rel='noreferrer'
           >
             Lien GitHub
-          </a>
+          </a> */}
           {link ? (
             <a
               href={link}
