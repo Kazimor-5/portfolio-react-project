@@ -63,6 +63,14 @@ export const data = [
     link: 'https://jobs-api-project1.herokuapp.com/api/docs/',
     img: './images/job-api.png',
   },
+  {
+    id: 10,
+    name: 'Pokedex avec scroll infini',
+    text: 'Pokedex réalisé sous react.js. Le traitement des données a été fait grâce à axios. Elle répertorie tout les pokémons existant à ce jours et intègre un sytème de scroll infini.',
+    gitlink: 'https://github.com/Kazimor-5/pokedex-project',
+    link: 'https://pokedex-api-infinite-scrolling.netlify.app',
+    img: './images/pokedex.png',
+  },
 ];
 
 export const navLinks = [
