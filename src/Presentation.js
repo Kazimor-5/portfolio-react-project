@@ -6,7 +6,7 @@ const Presentation = () => {
       <article className='article-presentation'>
         <p className='presentation'>
           Je m'appelle Alexandre-Benoît Fontaine, j'ai 23 ans et j'habite à
-          Tourcoing en France. Je suis développeur dans le web et web mobile.
+          Haubourdin en France. Je suis développeur dans le web et web mobile.
           J'ai commencé le développement web en 2021.
         </p>
       </article>
