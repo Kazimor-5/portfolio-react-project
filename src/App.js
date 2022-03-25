@@ -1,8 +1,8 @@
-import Navbar from './Navbar';
-import Presentation from './Presentation';
-import Projects from './Projects';
-import Skills from './Skills';
-import SocialLinks from './SocialLinks';
+import Navbar from './components/Navbar';
+import Presentation from './components/Presentation';
+import Skills from './components/Skills';
+import Slider from './components/Slider';
+import SocialLinks from './components/SocialLinks';
 
 const App = () => {
   return (
@@ -13,7 +13,7 @@ const App = () => {
       </header>
       <div className='separate'></div>
       <Presentation />
-      <Projects />
+      <Slider />
       <Skills />
       <SocialLinks />
     </main>

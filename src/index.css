@@ -217,6 +217,7 @@ body::-webkit-scrollbar-thumb {
   z-index: 999;
   display: flex;
   align-items: center;
+  background-color: var(--black);
 }
 
 .open-btn,
@@ -285,35 +286,92 @@ body::-webkit-scrollbar-thumb {
 
 /* ! ARTCILE PROJET */
 
-.article-project {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.25rem;
+.project-slider {
+  height: 105vh;
+  width: 90vw;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  max-width: 1170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.cell {
-  padding: 1.5rem;
-  background: var(--white);
-  box-shadow: var(--shadow-2);
+.slides-container {
+  height: 100%;
+  max-width: 800px;
+  width: 80vw;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto auto;
+  background-color: var(--white);
   border-radius: var(--border-radius);
   transition: var(--transition);
-  display: grid;
-  grid-template-rows: auto 1fr auto auto;
+  box-shadow: var(--shadow-2);
+  padding: 0.5rem;
 }
 
-.cell:hover {
-  box-shadow: var(--shadow-4);
+.active-slide {
+  opacity: 1;
+  transform: translateX(0);
 }
 
-.cell:hover .img {
-  transform: scale(0.9);
+.next-slide {
+  transform: translateX(100%);
+}
+
+.prev-slide {
+  transform: translateX(-100%);
+}
+
+.prev-btn,
+.next-btn {
+  position: absolute;
+  bottom: 5%;
+  transform: translateY(-50%);
+}
+
+.next-btn {
+  right: 5%;
+}
+
+.prev-btn {
+  left: 5%;
+}
+
+.name-project {
+  padding: 0.5rem;
+}
+
+.text-project {
+  width: 90%;
+  padding: 1rem;
+  font-size: 1.25rem;
 }
 
 .link-container {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
   padding: 1rem;
+}
+
+.link-project {
+  font-size: 1.5rem;
 }
 
 .link-project:hover {
@@ -375,15 +433,10 @@ body::-webkit-scrollbar-thumb {
   .show-nav {
     transform: translateY(0);
   }
-
-  .article-project {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
 
-@media screen and (max-width: 650px) {
-  .article-project {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1fr);
+@media screen and (max-width: 425px) {
+  .link-container {
+    flex-direction: column;
   }
 }

@@ -1,6 +1,6 @@
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { useRef } from 'react';
-import { navLinks } from './data';
+import { navLinks } from '../data';
 
 const Navbar = () => {
   const nav = useRef(null);
