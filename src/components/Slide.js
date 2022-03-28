@@ -4,7 +4,9 @@ const Slide = ({ data, position }) => {
   return (
     <div key={id} className={`slide ${position}`}>
       <h3 className='title name-project'>{name}</h3>
-      <img src={img} alt={name} className='img' />
+      <div className='img-container'>
+        <img src={img} alt={name} className='img' />
+      </div>
       <p className='text-project'>{text}</p>
       <div className='link-container'>
         {gitlink ? (

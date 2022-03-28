@@ -284,7 +284,7 @@ body::-webkit-scrollbar-thumb {
   font-size: 1.25rem;
 }
 
-/* ! ARTCILE PROJET */
+/* ! PROJET */
 
 .project-slider {
   height: 105vh;
@@ -317,10 +317,11 @@ body::-webkit-scrollbar-thumb {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto auto;
+  justify-items: center;
+  align-items: center;
   background-color: var(--white);
   border-radius: var(--border-radius);
   transition: var(--transition);
-  box-shadow: var(--shadow-2);
   padding: 0.5rem;
 }
 
@@ -378,9 +379,20 @@ body::-webkit-scrollbar-thumb {
   color: var(--primary-600);
 }
 
+.img-container {
+  overflow: hidden;
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+  width: 90%;
+}
+
 .img {
   border-radius: var(--border-radius);
   transition: var(--transition);
+}
+
+.slide:hover .img {
+  transform: scale(1.05);
 }
 
 /* ! SOCIAL LINKS */
